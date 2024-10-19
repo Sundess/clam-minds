@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/about.css" />
-    <link rel="icon" type="image/x-icon" href="../images/logo.png"> 
+    <link rel="icon" type="image/x-icon" href="../images/logo.png" />
     <title>About</title>
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html"
+      <a href="..\index.html"
         ><img class="logo" src="../images/logo.png" alt="logo" />
       </a>
       <div class="mid-nav">
@@ -32,6 +32,7 @@
         />
       </div>
     </nav>
+
     <div class="vision-section">
       <h1>Vison</h1>
       <p>
@@ -54,22 +55,39 @@
       <h1>Mission</h1>
     </div>
     <hr />
+
     <div class="send-msg-section">
-      <h2>Send Us a Message</h1>
-        <form action="" method="post">
-            <label for="full-name">Full Name</label>
-            <input id="full-name" type="text" placeholder="Jhon Doe"> 
-            <label for="number">Number</label>
-            <input id="number" type="text" placeholder="+977 9812345678">            
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="example@example.com"> 
-            <label for="message-box">Message</label>
-            <textarea name="message-box" id="message-box" placeholder="Write your message here."></textarea>
-            <button>
-                Submit
-            </button>
-        </form>
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" onsubmit="return validateForm(event)">
+        <label for="full-name">Full Name</label>
+        <input
+          id="full-name"
+          type="text"
+          placeholder="John Doe"
+          required
+          minlength="3"
+        />
+        <label for="number">Number</label>
+        <input id="number" type="text" placeholder="+977 9812345678" required />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="example@example.com"
+          required
+        />
+        <label for="message-box">Message</label>
+        <textarea
+          name="message-box"
+          id="message-box"
+          placeholder="Write your message here."
+          required
+          minlength="10"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </body>
   <script src="../js/global.js"></script>
+  <script src="../js/about.js"></script>
 </html>

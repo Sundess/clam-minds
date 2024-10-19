@@ -108,6 +108,7 @@ h1 {
   color: white;
   border-radius: 37px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .quick-link-cards {
