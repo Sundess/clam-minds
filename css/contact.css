@@ -1,0 +1,17 @@
+h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  margin: 8px 0px;
+  color: #0f0062;
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
